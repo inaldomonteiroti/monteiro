@@ -17,10 +17,6 @@ $mensagemHTML = '
 <b>Mensagem:</b> '.$mensagem.'</p>
 <hr>';
 
-echo "$mensagemHTML";
-
-die;
-
 // O remetente deve ser um e-mail do seu domínio conforme determina a RFC 822.
 // O return-path deve ser ser o mesmo e-mail do remetente.
 $headers = "MIME-Version: 1.1\r\n";

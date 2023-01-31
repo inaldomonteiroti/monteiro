@@ -16,5 +16,5 @@ $headers .= "From: $emailremetente\r\n";
 // remetente
 $headers .= "Return-Path: $emaildestinatario \r\n";
 // return-path
-$envio = mail($emaildestinatario, $mensagen, $headers);
+$envio = mail($emaildestinatario, $mensagem);
 ?>

@@ -6,7 +6,7 @@ $emaildestinatario = 'inaldomonteiroti@gmail.com,';// Digite seu e-mail aqui, le
 $mensagem = $_POST['message'];
 
 /* Montando a mensagem a ser enviada no corpo do e-mail. */
-
+$mensagemHTML = $mensagem;
 
 // O remetente deve ser um e-mail do seu domínio conforme determina a RFC 822.
 // O return-path deve ser ser o mesmo e-mail do remetente.
@@ -16,5 +16,5 @@ $headers .= "From: $emailremetente\r\n";
 // remetente
 $headers .= "Return-Path: $emaildestinatario \r\n";
 // return-path
-$envio = mail($emaildestinatario, $mensagem);
+$envio = mail($emaildestinatario, $mensagemHTML, $headers);
 ?>

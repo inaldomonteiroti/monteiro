@@ -1,6 +1,6 @@
 ﻿<?php
 // Passando os dados obtidos pelo formulário para as variáveis abaixo
-$nomeremetente = $_POST['nome'];
+$nomeremetente = $_POST['name'];
 $emailremetente = trim($_POST['email']);
 $emaildestinatario = 'inaldomonteiroti@gmail.com';// Digite seu e-mail aqui, lembrando que o e-mail deve estar em seu servidor web
 $assunto = "Formulário de Contato do Site" ;
